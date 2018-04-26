@@ -1,3 +1,4 @@
 module.exports = {
-    'url':'mongodb://localhost/EmployeeDB' 
+    'dockerurl':'mongodb://mongo-database:27017/EmployeeDB',
+    'localurl':'mongodb://localhost:27017/EmployeeDB' 
 }
