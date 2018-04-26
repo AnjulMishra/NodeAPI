@@ -11,7 +11,7 @@ flash = require('connect-flash')
 connectionString = require('./config/database');
 
 mongoose.Promise = global.Promise;
-var connection = mongoose.connect(connectionString.url, function(err, db) {
+var connection = mongoose.connect(connectionString.localurl, function(err, db) {
     if (err) {
         console.log('Unable to connect to the server. Please start the server. Error:', err);
     } else {
